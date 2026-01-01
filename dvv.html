@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HSBJK Image & PDF Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --neon1:#00f7ff;
+  --neon2:#ff2fdc;
+  --card:rgba(255,255,255,0.08);
+}
+
+*{
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:radial-gradient(circle at top,#0b1a2e,#02040a);
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:50px 20px 30px;
+}
+
+header h1{
+  font-size:44px;
+  font-weight:800;
+  background:linear-gradient(90deg,#6fd3ff,#b46cff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+header p{
+  margin-top:12px;
+  opacity:.85;
+}
+
+/* GRID */
+.tools{
+  max-width:1100px;
+  margin:40px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:28px;
+}
+
+/* CARD */
+.tool{
+  background:var(--card);
+  border-radius:20px;
+  padding:28px;
+  backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,0.1);
+  transition:.35s ease;
+}
+
+.tool:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 40px rgba(0,247,255,.25);
+}
+
+.tool h2{
+  font-size:22px;
+  margin-bottom:24px;
+}
+
+/* NEON BUTTON */
+.neon-btn{
+  display:inline-block;
+  width:100%;
+  padding:14px 0;
+  text-align:center;
+  border-radius:14px;
+  font-weight:600;
+  text-decoration:none;
+  color:#000;
+  background:linear-gradient(90deg,var(--neon1),var(--neon2));
+  transition:.25s;
+}
+
+.neon-btn:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 35px var(--neon1);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px 15px;
+  opacity:.6;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>HSBJK Image & PDF Studio</h1>
+  <p>Crop • Resize • Compress • Background Remove • Image ⇄ PDF</p>
+</header>
+
+<section class="tools">
+
+  <div class="tool">
+    <h2>Image Cropper</h2>
+    <a href="https://hsbjk2.github.io/HSBJK-Image-Cropper/"
+       target="_blank" class="neon-btn">
+       Open Tool
+    </a>
+  </div>
+
+  <div class="tool">
+    <h2>Resize / Dimension</h2>
+    <a href="https://hsbjk2.github.io/HSBJK-Image-Resizer/"
+       target="_blank" class="neon-btn">
+       Open Tool
+    </a>
+  </div>
+
+  <div class="tool">
+    <h2>Reduce / Increase Size</h2>
+    <a href="https://hsbjk2.github.io/HSBJK-Image-Compressor-Compress-to-Specific-Size-KB-MB-/"
+       target="_blank" class="neon-btn">
+       Open Tool
+    </a>
+  </div>
+
+  <div class="tool">
+    <h2>Background Remover</h2>
+    <a href="https://hsbjk2.github.io/HSBJK-Background-Remover/"
+       target="_blank" class="neon-btn">
+       Open Tool
+    </a>
+  </div>
+
+  <div class="tool">
+    <h2>Image → PDF</h2>
+    <a href="https://hsbjk2.github.io/HSBJK-Image-PDF/"
+       target="_blank" class="neon-btn">
+       Convert
+    </a>
+  </div>
+
+  <div class="tool">
+    <h2>PDF → Image</h2>
+    <a href="https://hsbjk2.github.io/HSBJK-PDF-Image/"
+       target="_blank" class="neon-btn">
+       Convert
+    </a>
+  </div>
+
+</section>
+
+<footer>
+  © 2025 <b>HSBJK</b> • Image Processing Platform
+</footer>
+
+</body>
+</html>
